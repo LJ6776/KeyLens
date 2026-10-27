@@ -1,0 +1,15 @@
+# 统一换行，避免不同系统上产生无意义的整文件 diff
+* text=auto
+
+# 脚本在 Windows 下必须是 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 代码与文档统一 LF
+*.py text eol=lf
+*.md text eol=lf
+*.cs text eol=lf
+*.json text eol=lf
+*.pyw text eol=lf
+*.ico binary

@@ -1,0 +1,14 @@
+{
+  "include": ["keylens"],
+  "exclude": ["**/__pycache__", "**/*.pyc"],
+  "typeCheckingMode": "standard",
+  "reportMissingParameterType": "warning",
+  "reportUnannotatedClassAttribute": "warning",
+  "reportUnknownVariableType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportUnusedCallResult": "none"
+}

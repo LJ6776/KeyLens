@@ -1,0 +1,53 @@
+# ---- KeyLens：只忽略生成物与敏感文件，绝不忽略源码 ----
+
+# Python 字节码 / 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 运行期垃圾（第三方程序会往当前工作目录写日志）
+*.log
+debug.log
+spill.jsonl
+
+# 生成物：预览、报告、打包输出
+keylens/previews/
+keylens/keylens-previews/
+keylens/reports/
+dist/
+build/
+release/
+*.spec
+
+# 数据与配置（真实记录不应进版本库）
+keylens-data/
+/config.json
+keylens.db
+keylens.db-wal
+keylens.db-shm
+
+# 敏感：代码签名私钥与证书，禁止提交 / 同步 / 外发
+tools/codesign.pfx
+*.pfx
+*.p12
+*.pvk
+*.pem
+*.key
+*.crt
+
+# 与本项目无关的本机排查脚本（zip 密码 / 剪贴板取证 / 环境诊断），不属于 KeyLens
+/_diag/
+/dsh-env-diag.ps1
+/find-zip-password.ps1
+/investigate-day.ps1
+/read-ditto.ps1
+/zip-crypto-type.ps1
+/zip-extract-hash.ps1
+
+# IDE / 编辑器
+.codebuddy/
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
