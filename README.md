@@ -12,6 +12,18 @@
 
 > 详细文档（配置项、隐私掩码、命令行参数、报告字段、常见问题）见 **[keylens/README.md](keylens/README.md)**。
 
+## 下载
+
+预编译的 Windows 版本见 [Releases](https://github.com/LJ6776/KeyLens/releases)：
+
+| 包 | 说明 |
+| --- | --- |
+| `KeyLens-1.0.0-setup.exe` | **安装包**：向导式安装，含许可协议、桌面 / 开始菜单快捷方式，并注册到「设置 → 应用」的卸载入口 |
+| `KeyLens-1.0.0-portable.zip` | **便携包**：解压即用，不写注册表、不装服务 |
+| `KeyLens-1.0.0-single.exe` | **单文件版**：一个 exe，可直接拷走；启动时解压到临时目录，慢 1–3 秒 |
+
+只想跑源码的话，零第三方依赖，`git clone` 后 `python -m keylens.main` 就能跑。
+
 ## 它是什么，不是什么
 
 | 是 | 不是 |
